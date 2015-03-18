@@ -1,15 +1,13 @@
 # Nginx image
 
-Nginx image.
-
 ## Requirements
 
 You must have [Docker](https://www.docker.com/) installed.
 
 ## What's inside
 
-* (latest ubuntu)[https://github.com/dockerfile/ubuntu]
-* (latest development nginx)[http://nginx.org/en/download.html]
+* [latest ubuntu](https://github.com/dockerfile/ubuntu)
+* [latest development nginx](http://nginx.org/en/download.html)
 
 ### Ports
 
