@@ -1,6 +1,6 @@
 #
-# Nginx image
-# https://github.com/monsieurchico/docker-nginx
+# Nginx Dockerfile
+# git@github.com:monsieurchico/docker-nginx.git
 #
 FROM ubuntu:latest
 MAINTAINER Romain Derocle "rderocle@gmail.com"

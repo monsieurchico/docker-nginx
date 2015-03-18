@@ -2,7 +2,7 @@
 
 ## Requirements
 
-You must have [Docker](https://www.docker.com/) installed.
+You must have [Docker](https://www.docker.com/) >= 1.5.
 
 ## What's inside
 
