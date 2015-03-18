@@ -10,6 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # update os and install nginx
 RUN \
+    apt-get update && \
     apt-get -y install software-properties-common && \
     add-apt-repository ppa:nginx/development && \
     apt-get update && \
@@ -26,7 +27,7 @@ EXPOSE 443
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www"]
 
 # add launch script
-ADD ./resources/startup.sh /startup.sh
+COPY ./resources/startup.sh /startup.sh
 
 # define entrypoint
 ENTRYPOINT ["/bin/bash", "/startup.sh"]
