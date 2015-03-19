@@ -31,23 +31,12 @@ You can mount directories :
 ```bash
 # pull (auto) and run
 docker run \
-  -d monsieurchico/nginx \
-  -t nginx
-
-# expose ports
-docker run \
-  -d monsieurchico/nginx \
-  -t nginx \
-  -p 80:80 \
-  -p 443:443
-
-# mount volumes
-docker run \
-  -d monsieurchico/nginx \
-  -t nginx \
+  -d \
+  --name nginx \
   -p 80:80 \
   -p 443:443 \
-  -v /path/to/my/vhost:/etc/nginx/sites-enabled
-  -v /path/to/my/logs:/var/log/nginx
-  -v /path/to/my/code:/var/www
+  -v /opt/docker/nginx/vhost:/etc/nginx/sites-enabled \
+  -v /opt/docker/nginx/logs:/var/log/nginx \
+  -v /opt/docker/nginx/code:/var/www \
+   monsieurchico/nginx
 ```
